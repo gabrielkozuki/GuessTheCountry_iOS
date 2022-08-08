@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="beM-8d-ynj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessTheFlag_Gabriel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rk5-QG-GdB">
+                                <rect key="frame" x="107" y="188" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="NiV-Lg-skb"/>
+                                    <constraint firstAttribute="width" constant="200" id="cfv-lK-lRk"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="uk"/>
+                                <connections>
+                                    <action selector="onClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ic3-l7-HxX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="724-OE-mJf">
+                                <rect key="frame" x="107" y="448" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="40X-fb-Kia"/>
+                                    <constraint firstAttribute="width" constant="200" id="HRM-rP-3r4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="KaW-Cx-LBY"/>
+                                    <constraint firstAttribute="height" constant="100" id="sJH-Co-DAy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="spain"/>
+                                <connections>
+                                    <action selector="onClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRf-G7-lLq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auh-jE-jTS">
+                                <rect key="frame" x="107" y="318" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="UKu-ab-xVI"/>
+                                    <constraint firstAttribute="width" constant="200" id="cp0-1w-Jhj"/>
+                                    <constraint firstAttribute="height" constant="100" id="ftA-am-zb7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="france" title=""/>
+                                <connections>
+                                    <action selector="onClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dIc-sc-HxW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rk5-QG-GdB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="WuU-6P-InU"/>
+                            <constraint firstItem="Rk5-QG-GdB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aOY-ch-gZP"/>
+                            <constraint firstItem="724-OE-mJf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bMQ-5a-pSd"/>
+                            <constraint firstItem="724-OE-mJf" firstAttribute="top" secondItem="Auh-jE-jTS" secondAttribute="bottom" constant="30" id="eOr-5X-3BI"/>
+                            <constraint firstItem="Auh-jE-jTS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oKa-me-bkr"/>
+                            <constraint firstItem="Auh-jE-jTS" firstAttribute="top" secondItem="Rk5-QG-GdB" secondAttribute="bottom" constant="30" id="r1A-bU-9uP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="n6q-EY-ad7"/>
+                    <connections>
+                        <outlet property="button1" destination="Rk5-QG-GdB" id="SWw-Bz-saM"/>
+                        <outlet property="button2" destination="Auh-jE-jTS" id="gEL-94-IFs"/>
+                        <outlet property="button3" destination="724-OE-mJf" id="8Z4-bd-uyO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oHN-6a-szC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="beM-8d-ynj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hjU-L1-uvE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kWm-ns-NFe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnG-LI-EeJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="france" width="200" height="100"/>
+        <image name="spain" width="200" height="100"/>
+        <image name="uk" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
